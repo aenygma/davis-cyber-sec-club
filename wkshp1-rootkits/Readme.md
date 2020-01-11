@@ -59,3 +59,7 @@ __Don't do this on your machine, because you'll brick it__
 ### Clone this repo
 ``git clone https://github.com/aenygma/davis-cyber-sec-club ~``
 
+
+## Reference:
+1. All the code was copied from: https://blog.sourcerer.io/writing-a-simple-linux-kernel-module-d9dc3762c234
+2. Designing BSD Rootkits is a great book. https://ihatefeds.com/No.Starch.Designing.BSD.Rootkits.An.Introduction.To.Kernel.Hacking.Apr.2007.ISBN.1593271425.pdf
