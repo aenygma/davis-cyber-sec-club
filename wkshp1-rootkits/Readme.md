@@ -45,7 +45,7 @@ __Don't do this on your machine, because you'll brick it__
     Vagrant is a front-end to control setup of VMs for many providers.  
     It's not necessary, but makes configuration and usage much easier.
 
-3. Get a VM image.  
+3. Get a VM image. (https://www.vagrantup.com/intro/getting-started/)  
         Get the latest ubuntu VM (you can get what ever flavor, but Ubuntu is like the "hello-world" of linux)  
 
 ### Second, install reqs:
