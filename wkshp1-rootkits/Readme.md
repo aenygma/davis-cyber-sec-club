@@ -1,6 +1,8 @@
 # Rootkits
 This workshop focused on talk about kernel modules, starting with reviewing basics of operating systems and how to write and build a simple modules. In preparation to delve into building rootkits.
 
+['nuf sqwaking! Gimmeh teh Codez!](#fine-fine-gimmeh-teh-codez)
+
 ## What are is Kernel?
 
 ## Backup, what is OS?
@@ -32,4 +34,28 @@ We would effectively be able to inspect and change memory, access hardware that 
 
 Simpler terms, ultimate pwnage.
 
-## 
+## Fine, fine. Gimmeh teh codez!
+
+### First, setup a VM.  
+__Don't do this on your machine, because you'll brick it__  
+1. Install VirtualBox (https://www.virtualbox.org/)  
+    VirtualBox is a hypervisor, that'll run a Linux Virtual Machine for you.
+
+2. Install Vagrant (https://www.vagrantup.com/docs/installation/)  
+    Vagrant is a front-end to control setup of VMs for many providers.  
+    It's not necessary, but makes configuration and usage much easier.
+
+3. Get a VM image.  
+        Get the latest ubuntu VM (you can get what ever flavor, but Ubuntu is like the "hello-world" of linux)  
+
+### Second, install reqs:
+
+1. Kernel headers  
+    These are the sources for the current kernel you are using.   
+    ``sudo apt-get install build-essential linux-headers-`uname -r` ``
+2. Build utils   
+    ``sudo apt-get install libelf-dev``
+
+### Clone this repo
+``git clone https://github.com/aenygma/davis-cyber-sec-club ~``
+
