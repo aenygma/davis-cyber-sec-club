@@ -8,3 +8,4 @@ All this does is make a module, that loads into the kernel and unloads.
 It prints a debug message to the kernel ring buffer, visible via `dmesg` upon init/exit.
 
 
+Example and code blantant copied from: https://blog.sourcerer.io/writing-a-simple-linux-kernel-module-d9dc3762c234
