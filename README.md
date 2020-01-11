@@ -1,2 +1,4 @@
-# davis-cyber-sec-club
-code relevant for the Davis Cyber Security Club meetings. 
+# Davis Cyber Sec Club Repo
+Code relevant for the Davis Cyber Security Club meetings.   
+
+(https://daviscybersec.ddns.net/)
