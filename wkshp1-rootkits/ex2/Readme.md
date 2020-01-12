@@ -14,11 +14,11 @@ After `make`ing the code, you'll need to create the device that you'll be intera
 * Copy that number
 * `sudo mknod /dev/lkm_example c ?? 0` where ?? is your number
 
-### Read from device:
+#### Read from device:
 `cat /dev/lkm_example`
 `dd if=/dev/lkm_example of=test bs=14 count=100`
 
-## Write to device:
+#### Write to device:
 `echo "LSDJF" >> /dev/lkm_example`
 You should expect this to fail, as designed.
 
