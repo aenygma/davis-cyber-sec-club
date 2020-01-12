@@ -122,8 +122,10 @@ __Don't do this on your machine, because you'll brick it__
     ``sudo apt-get install libelf-dev``
 
 ### Clone this repo
-``git clone https://github.com/aenygma/davis-cyber-sec-club ~``
+``git clone https://github.com/aenygma/davis-cyber-sec-club ~/wkshop1``
 
+### Compile
+Just run `make` for each example.
 
 ## References:
 1. All the code was copied from: https://blog.sourcerer.io/writing-a-simple-linux-kernel-module-d9dc3762c234
