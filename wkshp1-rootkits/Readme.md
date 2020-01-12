@@ -98,7 +98,7 @@ Loadable Kernel Modules are a feature of Linux (and some other OSs) where you ca
 One big use case is drivers for hardware.  
 If you wanted a piece of hardware to work with an OS, you need a driver to expose this functionality.  
 Being able to load and unload drivers (say for a network device, or a external proprietary usb device) is a pretty nice thing to have available.  
-Or perhaps you rarely use a piece of hardware (say a Jazz Drive, for whatever reason), then you can load/unload the module for the duration of use and keep extraneous running code to a minimum.
+Or perhaps you rarely use a piece of hardware (say a [https://en.wikipedia.org/wiki/Jaz_drive](Jaz Drive), for whatever reason), then you can load/unload the module for the duration of use and keep extraneous running code to a minimum.
 
 ## Great, but why should security club care?
 Kernel is the main bastion of protection in an OS. 
