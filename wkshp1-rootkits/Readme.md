@@ -1,32 +1,44 @@
 # Rootkits
-This workshop focused on talk about kernel modules, starting with reviewing basics of operating systems and how to write and build a simple modules. In preparation to delve into building rootkits.
+This workshop focused on talk about kernel modules, starting with reviewing basics of Operating Systems and how to write and build a simple modules. In preparation to delve into building rootkits.
 
 ['nuf sqwaking! Gimmeh teh Codez!](#fine-fine-gimmeh-teh-codez)
 
 ## What is Kernel?
 Kernel is an abstraction.  
-It's a program (or set of running procedures) that provides uniform and protected access to set of hardware.  
-It is fundamental in providing a platform for userspace applications to run on.
+It is a program (or set of running procedures) that provides uniform and protected access to set of hardware.  
+It is fundamental part of an OS, and in providing a platform for userspace applications to run on.
 
 ## Backup, what is an OS?
-Operating System. Next question!
+It stands for Operating System. Next question!
 
-## Backup further
-One day some loser cobbled together some parts and made a machine. It did a thing. And only 1 thing.  
-Then of course, other nerds wanting bragging rights, made their own. Though everyone put their own spin on how the computer worked.  
+## What is an OS? --verbose
+One day some nerd cobbled together some parts and made a machine.   
+It did a thing. ...and only 1 thing.  
+
+Then of course, wanting bragging rights, other nerds made their own. Though everyone put their own spin on how the machine worked.  
 The problem was that you can bunch of hardware, that was doing something simliar, but no way of having them do the same computation, cuz everyone had their own homebrewed thing.  
-Someone marginally smart said, "Hey, let's have some code that all machines can run, so people that use that code can write things consistently, and you know, not repeat same code and maybe even share things."
+
+Someone marginally smart said:  
+"Hey, let's have some code that all machines can run,   
+ so people that use that code can write things consistently,  
+ and you know, not repeat same code and maybe even share things."
+
 If this seems like a Platform or an API, it effectively is.
 
-The advantage of this was that the programmer didn't have to know the hardware idiosyncracies of each crazy set of cobbled together mess. Simply that they get a small menu of functions they can use, the rest is taken care of by someone else (read: abstraction).
+The advantage of this is that you don't have to fuss with hardware details. 
+We can remain blissfully ignorant, and focus on what we want to get done.
+Like all things, this is a trade-off: 
+We can't do all the things we want to, OS only exposes a small menu of functions that can be used.
 
 --- 
-An Operating System is such a thing.  
+An Operating System is just such a thing.  
+It is fundamentally just an abstraction.   
 
-You, as a programmer, don't have to worry or even think about booting a machine, initializing the hardware, loading the right drivers, managing memory (or any storage), how to display thing to screen, managing resource, coordinating activities, etc.  
+You, as a programmer, don't have to worry or even think about a lot of things.   
+Like booting a machine, initializing the hardware, loading the right drivers, managing memory (or any storage), how to display thing to screen, managing resources, coordinating activities, etc.  
 All of this "basic" functionality is handled for you by the OS. So you can leverage what it provides to do what you want to.   
 
-It is fundamentally an abstraction.  
+Needless to say, there's lot to say of Operating Systems, but the key for us is to find out what it is providing, and how to compromise it.
 
 ## Intuitions
 It is my opinion that you should use real-life metaphors for understanding this, if at least because that's how these were drawn from.  
