@@ -100,29 +100,38 @@ We would effectively be able to inspect and change memory, access hardware that 
 Simpler terms, ultimate pwnage.
 
 ## Fine, fine. Gimmeh teh codez!
-
-### First, setup a VM.  
 __Don't do this on your machine, because you'll brick it__  
+
+Thanks to @rkevin-arch for the Vagrantfile. Makes things much simpler.
+
+### First, install required software.  
+
 1. Install VirtualBox (https://www.virtualbox.org/)  
     VirtualBox is a hypervisor, that'll run a Linux Virtual Machine for you.
+    Install guide: (https://www.virtualbox.org/wiki/Linux_Downloads)
 
 2. Install Vagrant (https://www.vagrantup.com/docs/installation/)  
     Vagrant is a front-end to control setup of VMs for many providers.  
-    It's not necessary, but makes configuration and usage much easier.
+    It's not necessary, but makes configuration, management usage much easier.   
+ 
+    Download `.deb` file from (https://www.vagrantup.com/downloads.html), then  
+``sudo apt install <deb-file>
 
-3. Get a VM image. (https://www.vagrantup.com/intro/getting-started/)  
-        Get the latest ubuntu VM (you can get what ever flavor, but Ubuntu is like the "hello-world" of linux)  
+3. Clone the repo  
+``git clone https://github.com/aenygma/davis-cyber-sec-club ``
 
-### Second, install reqs:
+4. From the newly cloned directory, start the VM.  
+    This will download a base image, provision it with software.  
+    Please be patient, the first time takes a while.
+``vagrant up``
 
-1. Kernel headers  
-    These are the sources for the current kernel you are using.   
-    ``sudo apt-get install build-essential linux-headers-`uname -r` ``
-2. Build utils   
-    ``sudo apt-get install libelf-dev``
+5. Hop on the VM, once booted.
+``vagrant ssh``
 
-### Third, Clone this repo
-``git clone https://github.com/aenygma/davis-cyber-sec-club ~/wkshop1``
+6. CD 
+    The machine has been setup so that your cloned repo will show up in the VM at ``/code``  
+    Any changes you make there (on guest)  will be reflected on your host machine.  
+``cd /code``
 
 ### Finally, Compile
 Just run `make` for each example in each directory.
