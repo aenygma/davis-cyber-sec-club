@@ -106,29 +106,29 @@ Thanks to @rkevin-arch for the Vagrantfile. Makes things much simpler.
 
 ### First, install required software.  
 
-1. Install VirtualBox (https://www.virtualbox.org/)  
+1. __Install VirtualBox__ (https://www.virtualbox.org/)  
     VirtualBox is a hypervisor, that'll run a Linux Virtual Machine for you.
     Install guide: (https://www.virtualbox.org/wiki/Linux_Downloads)
 
-2. Install Vagrant (https://www.vagrantup.com/docs/installation/)  
+2. __Install Vagrant__ (https://www.vagrantup.com/docs/installation/)  
     Vagrant is a front-end to control setup of VMs for many providers.  
     It's not necessary, but makes configuration, management usage much easier.   
  
     Download `.deb` file from (https://www.vagrantup.com/downloads.html), then  
-``sudo apt install <deb-file>
+``sudo apt install <deb-file>``
 
-3. Clone the repo  
+3. __Clone the repo__  
 ``git clone https://github.com/aenygma/davis-cyber-sec-club ``
 
-4. From the newly cloned directory, start the VM.  
+4. From the newly cloned directory, __start the VM__.  
     This will download a base image, provision it with software.  
     Please be patient, the first time takes a while.
 ``vagrant up``
 
-5. Hop on the VM, once booted.
+5. __Hop on__ the VM, once booted.
 ``vagrant ssh``
 
-6. CD 
+6. __$$$__ 
     The machine has been setup so that your cloned repo will show up in the VM at ``/code``  
     Any changes you make there (on guest)  will be reflected on your host machine.  
 ``cd /code``
