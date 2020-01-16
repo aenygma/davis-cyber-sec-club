@@ -24,10 +24,10 @@ Let's take this simple layout for our restaurant.
     +-----------------------+
     |  |       |      Lobby/|
     |  |       | Dining Area|
-    |  |       |            |
-    |  |       |            |
-    |  |       |            |
-    |  |1      | 4          |
+    |  |       |            |       1. Customer walks to Service counter and places order.
+    |  |       |            |       2. Worker takes order, goes to kitchen, starts prep.
+    |  |       |            |       3. Worker finishes and returns with order.
+    |  |1      | 4          |       4. Customer receives order. Transaction finished.
     +--v-------+------------+
     |  Service              |
     |  Counter              |
@@ -37,10 +37,10 @@ Let's take this simple layout for our restaurant.
     |    v 2    |    Kitchen|
     +----+------+-----------+
 
-1. Customer walks to Service counter and orders
-2. Worker takes order, goes to kitchen, starts prep.
-3. Worker finishes and returns with order
-4. Customer receives order. Transaction finished.
+
+
+
+
 
 ---
 
