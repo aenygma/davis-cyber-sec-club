@@ -13,10 +13,10 @@ Let's take this simple layout for our restaurant.
     |                       |
     |                       |
     +-----------------------+
+    |               Kitchen |
     |                       |
     |                       |
     |                       |
-    |                Kitchen|
     +-----------------------+
 
 ---
@@ -33,16 +33,16 @@ Let's take this simple layout for our restaurant.
     |                       |
     |                       |
     +----+------^-----------+
-    |    |      |           |
+    |    |      |   Kitchen |
     |    |      |3          |
     |    |      |           |
-    |    v 2    |    Kitchen|
+    |    v 2    |           |
     +----+------+-----------+
 
 
 ---
 
-_This is a great, but why are we doing this??_ 
+_This is a great, but why are we doing this??_   
 Because, this maps to our OS model of syscalls.
 
     +-----------------------+                +-----------------------+
@@ -56,10 +56,10 @@ Because, this maps to our OS model of syscalls.
     |                       |                |                       |
     |                       |     ======     |                       |
     +-----------------------+                +-----------------------+
-    |                       |                |                       |
-    |                       |                |                       |
-    |                       |                |                       |
     |              Hardware |                |               Kitchen |
+    |                       |                |                       |
+    |                       |                |                       |
+    |                       |                |                       |
     +-----------------------+                +-----------------------+
 
 ---
