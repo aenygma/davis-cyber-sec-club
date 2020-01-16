@@ -2,21 +2,21 @@ Let's review OS basics, by looking at our restaurant example.
 
 Let's take this simple layout for our restaurant.  
 
-  +-----------------------+
-  |                 Lobby/|
-  |            Dining Area|
-  |                       |
-  |                       |
-  |                       |
-  |                       |
-  +-----------------------+
-  |  Service              |
-  |  Counter              |
-  +-----------------------+
-  |                       |
-  |                       |
-  |                Kitchen|
-  +-----------------------+
+    +-----------------------+
+    |                 Lobby/|
+    |            Dining Area|
+    |                       |
+    |                       |
+    |                       |
+    |                       |
+    +-----------------------+
+    |  Service              |
+    |  Counter              |
+    +-----------------------+
+    |                       |
+    |                       |
+    |                Kitchen|
+    +-----------------------+
 
 ---
 
