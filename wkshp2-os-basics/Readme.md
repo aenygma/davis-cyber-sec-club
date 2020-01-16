@@ -68,7 +68,8 @@ But it's missing couple things...
 In an OS, the user brings input and asks the Kernel to do something...   
 So, let's change our restaurant a little bit.   
 
- __Now__, customers can bring their own ingredients, and request a meal.   
+__Now__, customers can bring their own ingredients, and request a meal.   
+
 ---
 
 
