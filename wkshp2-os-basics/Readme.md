@@ -64,11 +64,11 @@ Because, this maps to our OS model of syscalls.
 
 ---
 
-But it's missing somethings.   
+But it's missing couple things...   
 In an OS, the user brings input and asks the Kernel to do something...   
 So, let's change our restaurant a little bit.   
 
-Customers can bring their own ingredients, and request a meal.   
-
+__Now__, customers can bring their own ingredients, and request a meal.   
+---
 
 
