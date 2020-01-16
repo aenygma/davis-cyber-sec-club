@@ -8,8 +8,8 @@ Let's take this simple layout for our restaurant.
     |                       |
     |                       |
     +-----------------------+
-    |              Service  |
-    |              Counter  |
+    |               Service |
+    |               Counter |
     |                       |
     |                       |
     +-----------------------+
@@ -63,5 +63,12 @@ Because, this maps to our OS model of syscalls.
     +-----------------------+                +-----------------------+
 
 ---
+
+But it's missing somethings.   
+In an OS, the user brings input and asks the Kernel to do something...   
+So, let's change our restaurant a little bit.   
+
+Customers can bring their own ingredients, and request a meal.   
+
 
 
