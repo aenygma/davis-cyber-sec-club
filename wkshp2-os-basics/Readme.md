@@ -1,3 +1,5 @@
+# A Simple Plan
+
 Let's review OS basics, by looking at our restaurant example.
 
 Let's take this simple layout for our fast-food restaurant.  
@@ -41,6 +43,7 @@ Let's take this simple layout for our fast-food restaurant.
 
 ---
 
+# 
 _This is a great, but why are we doing this??_   
 Because, this maps to our OS model of syscalls. 
 
@@ -66,6 +69,7 @@ The Kernel starts the work and returns.
 When it is finished, the response is returned to the caller in Userspace.  
 
 ---
+# Complex, but not complicated
 
 But it's missing couple things...   
 In an OS, the user brings input and asks the Kernel for resources...   
@@ -78,6 +82,8 @@ The Chef (Kernel) uses the recipe (Program) to assemble the meal (output).
 The Resources here are kitchen appliances: Oven, Fridge, Mixer, Storeroom.
 
 ---
+# 2 Recipes, 1 Chef
+
 Two Customers come with two recipes.   
 
     +-----------------------+                +-----------------------+
