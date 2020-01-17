@@ -1,7 +1,6 @@
 ## A Simple Plan
 
 Let's review OS basics, by looking at our restaurant example.
-
 Let's take this simple layout for our fast-food restaurant.  
 
     +-----------------------+
@@ -44,7 +43,6 @@ Let's take this simple layout for our fast-food restaurant.
 ---
 ## Complex, but not complicated
 
-# 
 _This is a great, but why are we doing this??_   
 Because, this maps to our OS model of syscalls. 
 
