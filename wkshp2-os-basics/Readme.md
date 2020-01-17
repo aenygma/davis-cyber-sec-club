@@ -42,7 +42,7 @@ Let's take this simple layout for our fast-food restaurant.
 ---
 
 _This is a great, but why are we doing this??_   
-Because, this maps to our OS model of syscalls.
+Because, this maps to our OS model of syscalls. 
 
     +-----------------------+                +-----------------------+
     |             Userspace |                |                Dining |
@@ -61,6 +61,10 @@ Because, this maps to our OS model of syscalls.
     |                       |                |                       |
     +-----------------------+                +-----------------------+
 
+In the previous example, Userspace made a request to the Kernel.  
+The Kernel starts the work and returns.  
+When it is finished, the response is returned to the caller in Userspace.  
+
 ---
 
 But it's missing couple things...   
@@ -69,7 +73,9 @@ So, let's change our restaurant a little bit.
 
 __Now__, the customers can bring a recipe on how to make a meal.    
 The Chef (Kernel) uses the recipe (Program) to assemble the meal (output).  
-(We can even imagine the customer bringing some special ingredients of their own as well.)  
+(We can even imagine the customer bringing some special ingredients of their own as well.) 
+
+The Resources here are kitchen appliances: Oven, Fridge, Mixer, Storeroom.
 
 ---
 Two Customers come with two recipes.   
