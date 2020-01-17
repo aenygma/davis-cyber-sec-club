@@ -1,4 +1,13 @@
-## A Simple Plan
+## Workshop Agenda
+* Review
+* Process Intro
+* Process details
+* H4X0R LKMs
+
+I'll try to work from a intuitive base, rather than technical.  
+Later we'll "overlay" the technical details on top of our understanding.  
+
+## Review: A Simple Plan
 
 Let's review OS basics, by looking at our restaurant example.
 Let's take this simple layout for our fast-food restaurant.  
@@ -67,8 +76,6 @@ In the previous example, Userspace made a request to the Kernel.
 The Kernel starts the work and returns.  
 When it is finished, the response is returned to the caller in Userspace.  
 
----
-
 But it's missing couple things...   
 In an OS, the user brings input and asks the Kernel for resources...   
 So, let's change our restaurant a little bit.   
@@ -77,10 +84,10 @@ __Now__, the customers can bring a recipe on how to make a meal.
 The Chef (Kernel) uses the recipe (Program) to assemble the meal (output).  
 (We can even imagine the customer bringing some special ingredients of their own as well.) 
 
-The Resources here are kitchen appliances: Oven, Fridge, Mixer, Storeroom.
+The Resources here are kitchen appliances: Stove, Oven, Grill, Fridge, Mixer, Storeroom.
 
 ---
-## 2 Recipes, 1 Chef
+## Processes: 2 Recipes, 1 Chef
 
 Two Customers come with two recipes.   
 
@@ -100,13 +107,33 @@ Two Customers come with two recipes.
     | Thread 2:             |                |  Onions, Cheese       |
     | ---------             |                |  to Buns              | 
     | Cook Tomatoes         |                | Place Patty on Bun    | 
-    | Add Meat              |                |                       | 
-    | Add Spices            |                |                       | 
+    |  Add Meat             |                |                       | 
+    |  Add Spices           |                |                       | 
     | Cook 10 minutes       |                |                       |     
     |                       |                |                       | 
     | Add Sauce to Pasta    |                |                       | 
     +-----------------------+                +-----------------------+
 
+We only have 1 Stove and Grill! 
+
+But, our chef is smart: 
+* Doesn't watch pot to make it boil.  
+* Doesn't need to stand idle when there's other work. 
+
+We can do multiple things at once, if we can time-slice and keep track of things.  
 
 
+TODO:
+* Syscalls here are requests to user the previously mentioned Resources.
+* Process List
+* Process Control Block (PCB)
+* So to hide a process, is simple, just don't print the process from the list.
+
+---
+
+
+
+# Referecncs:
+* Operating Systems: Three Easy Pieces - http://pages.cs.wisc.edu/~remzi/OSTEP/ (Great Free book, IMO)
+* Operating System Concepts - aka "Dinosaur Book" - http://os-book.com/OS9/index.html
 
