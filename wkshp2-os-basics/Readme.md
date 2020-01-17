@@ -75,8 +75,11 @@ The Chef (Kernel) uses the recipe (Program) to assemble the meal (output).
 Two Customers come with two recipes.   
 
     +-----------------------+                +-----------------------+
-    | Recipe: Pasta         |                | Recipe: Burgers       |
+    |                       |                |                       | 
+    |   Recipe: Pasta       |                |   Recipe: Burgers     |
+    |   =============       |                |   ===============     | 
     +-----------------------+                +-----------------------+
+    |                       |                |                       | 
     | Thread 1:             |                | Thread 1:             |
     | ---------             |                | ---------             |
     | Boil Water            |                | Add Meat, Spices      |
