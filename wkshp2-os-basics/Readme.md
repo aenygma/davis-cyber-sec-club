@@ -2,7 +2,11 @@
 * Review
 * Process Intro
 * Process details
+* strace - demo
 * H4X0R LKMs
+
+Topics Covered: OS review, Syscalls, Process
+
 
 I'll try to work from a intuitive base, rather than technical.  
 Later we'll "overlay" the technical details on top of our understanding.  
@@ -114,6 +118,17 @@ Two Customers come with two recipes.
     | Add Sauce to Pasta    |                |                       | 
     +-----------------------+                +-----------------------+
 
+We should probably have a way to keep track of this stuff.  
+Perhaps a list of all outstanding orders, and each entry keeping the state of the dish.  
+That way we know what all is going on, and where each item is.  
+
+The Kernel does this exact thing.  
+* Process list keeps track of all the processes.  
+* Each entry in the list is called a Process Control Block.
+
+---
+### 
+
 We only have 1 Stove and Grill! 
 
 But, our chef is smart: 
@@ -121,6 +136,16 @@ But, our chef is smart:
 * Doesn't need to stand idle when there's other work. 
 
 We can do multiple things at once, if we can time-slice and keep track of things.  
+If we can keep record and state of the activities, we can service things more efficiently.  
+
+---
+## State of the state: Bean counting
+
+If we can keep track of how the cooking is done, we can set more things in action.
+
+In reality the flow looks a lot more like
+
+
 
 
 TODO:
