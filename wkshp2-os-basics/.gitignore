@@ -1,0 +1,13 @@
+#files
+*.sw?
+*.o
+*.cmd
+*.ko
+*.mod
+modules.order
+Module.symvers
+*.mod.c
+
+#dirs
+.vagrant*/
+
