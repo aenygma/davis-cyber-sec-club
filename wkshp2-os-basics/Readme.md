@@ -88,10 +88,15 @@ __Now__, the customers can bring a recipe on how to make a meal.
 The Chef (Kernel) uses the recipe (Program) to assemble the meal (output).  
 (We can even imagine the customer bringing some special ingredients of their own as well.) 
 
-The Resources here are kitchen appliances: Stove, Oven, Grill, Fridge, Mixer, Storeroom.
+The Resources here are kitchen appliances: Stove, Oven, Grill, Fridge, Mixer, Storeroom.  
+The request to make use of those appliances is a **System Call**.
+
+## Demo: strace?
+- look at how `strace ls` works
+- look at how `strace ps` works
 
 ---
-## Processes: 2 Recipes, 1 Chef
+## Accounting: Keeping track of state.
 
 Two Customers come with two recipes.   
 
@@ -123,11 +128,14 @@ Perhaps a list of all outstanding orders, and each entry keeping the state of th
 That way we know what all is going on, and where each item is.  
 
 The Kernel does this exact thing.  
-* Process list keeps track of all the processes.  
-* Each entry in the list is called a Process Control Block.
+* **Process list** keeps track of all the processes.  
+* Each entry in the list is called a **Process Control Block**.
+
+As we'll see, this allows us to be more efficient.  
+If we can keep track of how the cooking is done, we can set more things in action.  
 
 ---
-### 
+### Mutliprocessing: 2 Recipes, 1 Chef.
 
 We only have 1 Stove and Grill! 
 
@@ -135,30 +143,21 @@ But, our chef is smart:
 * Doesn't watch pot to make it boil.  
 * Doesn't need to stand idle when there's other work. 
 
-We can do multiple things at once, if we can time-slice and keep track of things.  
-If we can keep record and state of the activities, we can service things more efficiently.  
+Moving from one task to the other is a **Context Switch**.  
+Much like the kitchen, moving from one task to another involves some overhead, same is true in OS.   
+This typically invovles: State store, state instantiation, and state saving.  
+(Note that "state" involves a lot more things in reality.)
+
+So, effectively a process from a Kernel point of view is just an entry, and its associated state.  
 
 ---
-## State of the state: Bean counting
+### LKM to hide stuff: FiNAlLy some 1337 H4x0r moves!! 
 
-If we can keep track of how the cooking is done, we can set more things in action.
+Let's look at `strace ps` again and see what's going on.  
 
-In reality the flow looks a lot more like
+So to hide a process, is simple, just don't print the process from the list.
 
-
-
-
-TODO:
-* Syscalls here are requests to user the previously mentioned Resources.
-* Process List
-* Process Control Block (PCB)
-* So to hide a process, is simple, just don't print the process from the list.
-
----
-
-
-
-# Referecncs:
+# References:
 * Operating Systems: Three Easy Pieces - http://pages.cs.wisc.edu/~remzi/OSTEP/ (Great Free book, IMO)
 * Operating System Concepts - aka "Dinosaur Book" - http://os-book.com/OS9/index.html
 
