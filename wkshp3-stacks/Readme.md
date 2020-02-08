@@ -337,9 +337,9 @@ Need to: K
 ---
 ### Step 10:
 
-Visited: root, C, B, A, D, F, G, H, I, J
-Current: K
-Need to: null
+Visited: root, C, B, A, D, F, G, H, I, J  
+Current: K  
+Need to: null  
 
                                +----+
                                |root|
@@ -366,9 +366,9 @@ Need to: null
 ---
 ### Step 11:
 
-Visited: root, C, B, A, D, F, G, H, I, J, K
-Current: null
-Need to: null
+Visited: root, C, B, A, D, F, G, H, I, J, K  
+Current: null  
+Need to: null  
 
                                +----+
                                |root|
