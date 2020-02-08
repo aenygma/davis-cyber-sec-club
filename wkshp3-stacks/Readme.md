@@ -44,9 +44,9 @@ We'll need to use a method of keep track of where we've been and where we need t
 
 ### Step 0:
 
-Visited: Null
-Current: root
-Need to: C, F
+Visited: Null  
+Current: root  
+Need to: C, F  
 
                                +-X--+
                                |root|
@@ -73,9 +73,9 @@ Need to: C, F
 ---
 ### Step 1:
 
-Visited: root
-Current: C
-Need to: [B, D], F
+Visited: root  
+Current: C  
+Need to: [B, D], F  
 
                                +----+
                                |root|
@@ -102,9 +102,9 @@ Need to: [B, D], F
 ---
 ### Step 2:
 
-Visited: root, C 
-Current: B
-Need to: [A], D, F
+Visited: root, C   
+Current: B  
+Need to: [A], D, F  
 
                                +----+
                                |root|
@@ -131,9 +131,9 @@ Need to: [A], D, F
 ---
 ### Step 3:
 
-Visited: root, C, B
-Current: A
-Need to: D, F
+Visited: root, C, B  
+Current: A  
+Need to: D, F  
 
                                +----+
                                |root|
@@ -160,9 +160,9 @@ Need to: D, F
 ---
 ### Step 4:
 
-Visited: root, C, B, A
-Current: D
-Need to: F
+Visited: root, C, B, A  
+Current: D  
+Need to: F  
 
                                +----+
                                |root|
@@ -192,9 +192,9 @@ We looked at the **Need to** list and now we can jump directly to that node.
 ---
 ### Step 5:
 
-Visited: root, C, B, A, D
-Current: F
-Need to: [G, I]
+Visited: root, C, B, A, D  
+Current: F  
+Need to: [G, I]  
 
                                +----+
                                |root|
@@ -221,9 +221,9 @@ Need to: [G, I]
 ---
 ### Step 6:
 
-Visited: root, C, B, A, D, F
-Current: G
-Need to: [H], I
+Visited: root, C, B, A, D, F  
+Current: G  
+Need to: [H], I  
 
                                +----+
                                |root|
@@ -250,9 +250,9 @@ Need to: [H], I
 ---
 ### Step 7:
 
-Visited: root, C, B, A, D, F, G
-Current: H
-Need to: I
+Visited: root, C, B, A, D, F, G  
+Current: H  
+Need to: I  
 
                                +----+
                                |root|
@@ -279,9 +279,9 @@ Need to: I
 ---
 ### Step 8:
 
-Visited: root, C, B, A, D, F, G, H
-Current: I
-Need to: [J, K]
+Visited: root, C, B, A, D, F, G, H  
+Current: I  
+Need to: [J, K]  
 
                                +----+
                                |root|
@@ -308,9 +308,9 @@ Need to: [J, K]
 ---
 ### Step 9:
 
-Visited: root, C, B, A, D, F, G, H, I
-Current: J
-Need to: K
+Visited: root, C, B, A, D, F, G, H, I  
+Current: J  
+Need to: K  
 
                                +----+
                                |root|
